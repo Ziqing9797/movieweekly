@@ -14,18 +14,25 @@ Page({
   onLoad: function (options) {
     this.setData({
       mid: options.id
-    }),
+    })
+	var that = this
     wx.request({
       url: 'https://douban.uieee.com/v2/movie/'+options.id,
       method:  'GET',
-      data: {
-       
-      },
       header:{
           "content-type": "json"
       },
       success: function(res){
-          console.log(res)
+          //console.log(res)
+		  if(res.statusCode==200){
+			  that.setData({
+				  movie: res.data
+			  })	  
+		  }else{
+			  wx.redirectTo({
+				  url: '/pages/404/404',
+			  })
+		  }
       },
       fail: function(){
 

@@ -6,14 +6,14 @@ Page({
         comment: "失去的才是永恒的",
         imagePath: "/images/titanic.jpg",
         isHighlyRecommended: false,
-        id: 11,
+		id: 1292722,
       },
       {
         name: "这个杀手不太冷",
         comment: "小萝莉与怪蜀黍纯真灿烂的爱情故事",
         imagePath: "/images/leon.jpg",
         isHighlyRecommended: false,
-        id: 22,
+		id: 1295644,
       },
       {
         name: "教父",

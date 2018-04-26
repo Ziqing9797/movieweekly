@@ -1,2 +1,8 @@
 <!--pages/detail/detail.wxml-->
-<text>{{mid}}</text>
+<view class='container'>
+	<text>{{movie.title}}</text>
+	<image src='{{movie.image}}' style='width:300rpx;height:600rpx'></image>
+	<text>作者：{{movie.author[0].name}}</text>
+	<text>豆瓣评分：{{movie.rating.average}}</text>
+	<text>简介{{movie.summary}}</text>
+</view>
